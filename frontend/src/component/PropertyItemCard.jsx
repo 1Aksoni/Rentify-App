@@ -24,7 +24,7 @@ const PropertyItemCard = ({ property }) => {
     const handleInterest = async () => {
         try {
           // Make POST request to backend with property data
-          const response= await  axios.post('http://localhost:5000/api/v1/buyer/send-mail', {propertyData:property}, {
+          const response= await  axios.post('api/v1/buyer/send-mail', {propertyData:property}, {
         headers: {
           'Content-Type': 'application/json',
            Authorization: localStorage.getItem('token'),
