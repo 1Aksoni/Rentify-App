@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 
 // Get the directory name from the URL
 const __filename = fileURLToPath(import.meta.url);
-const _dirname = path.dirname(_filename);
+const _dirname = path.dirname(__filename);
 app.use(cors());
 
     app.use(express.json({limit:"16kb"})); 
