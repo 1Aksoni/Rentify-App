@@ -35,7 +35,7 @@ const AddProperty = () => {
      
     try {
       
-      const response= await  axios.post('https://localhost:5000/api/v1/seller/add-property', formData, {
+      const response= await  axios.post('http://localhost:5000/api/v1/seller/add-property', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
            Authorization: localStorage.getItem('token'),

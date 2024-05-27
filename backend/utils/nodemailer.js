@@ -3,16 +3,17 @@ import nodemailer from  'nodemailer';
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'dangig976@gmail.com',
-      pass: 'wcxcxdecxgjqurud'
+      user: 'akshat2001soni@gmail.com',
+      pass: 'iqkfmpzdnqiouvwp '
     }
   });
 
   const sendEmail = async (to,data) => {
     try {
+      console.log("Comming");
       // Send mail with defined transport object
       const info = await transporter.sendMail({
-        from: 'dangig976@gmail.com',
+        from: 'akshat2001soni@gmail.com',
         to:to,
         subject: "Real Estate Property Dealing ",
         html:data,

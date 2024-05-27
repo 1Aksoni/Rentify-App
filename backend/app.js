@@ -9,7 +9,7 @@ app.use(cors());
     //     credentials: true
     // }));
     
-    app.use(express.json({limit:"16kb"})); // agar form ka data json formate me aata he to use is middleware se use kiya jata he phle body-parser bhi use kiya jaat tha 
+    app.use(express.json({limit:"16kb"})); 
     app.use(urlencoded({extended:true,limit:"16kb"})); // jab url me data aata he to bo diffrent diffrent charecter leta he use shi formate me change krta he 
     app.use(express.static("public")) // agar hame koi cheej server pr store krna he to yha uska path dena hota he ye middleware usi kam me aata he 
     

@@ -60,7 +60,7 @@ const sendMail = async(req,res)=>{
        
         <h3>Thank you.</h3>
       `;
-
+      console.log("fdghj");
       const ownerEmail = sendEmail(req.body.propertyData.owner.email, emailContentforSeller);
       if(!ownerEmail){
         throw new ApiError(500,"Something went wrong while Sending the mail to Seller");

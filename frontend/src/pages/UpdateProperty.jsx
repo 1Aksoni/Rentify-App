@@ -34,7 +34,7 @@ const UpdateProperty = () => {
     e.preventDefault();
     try {
       
-      const response= await  axios.put('https://localhost:5000/api/v1/seller/update-property', formData, {
+      const response= await  axios.put('http://localhost:5000/api/v1/seller/update-property', formData, {
         headers: {
           'Content-Type': 'application/json',
            Authorization: localStorage.getItem('token'),

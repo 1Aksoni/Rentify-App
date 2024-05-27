@@ -1,17 +1,16 @@
 import {v2 as cloudinary} from 'cloudinary';
 import fs from "fs";
 
-//ye clodinary ka congigration he 
-
+          
 cloudinary.config({ 
-  cloud_name:"dc6tczoju", 
-  api_key: 194667882311387, 
-  api_secret: "DNc-a9L9f3z4FO5ggTrgcVMNR34" 
+  cloud_name: 'dhq21bhqr', 
+  api_key: '679488171557832', 
+  api_secret: '8J-Sv3cAhMIjXHXnSLJsWG5-jhM' 
 });
 
 const uploadOnCloudinary =async (localFilePath,targetFolder)=>{
      try {
-        // console.log("hhhhhhhh");
+       
         if(!localFilePath)return null;
         const response=await cloudinary.uploader.upload(localFilePath,{
             resource_type:"auto",

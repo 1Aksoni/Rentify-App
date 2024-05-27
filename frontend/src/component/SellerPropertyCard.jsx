@@ -15,7 +15,7 @@ const SellerPropertyCard = ({ property, setLoad }) => {
     try {
       //console.log(id);
       const response = await axios.delete(
-        `https://localhost:5000/api/v1/seller/delete-property/${id}`,
+        `http://localhost:5000/api/v1/seller/delete-property/${id}`,
         {
           headers: {
             "Content-Type": "application/json",
